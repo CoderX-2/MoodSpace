@@ -11,7 +11,7 @@ import androidx.activity.viewModels
 import com.google.android.material.textfield.TextInputEditText
 import com.moodspace.app.R
 
-// HU04 – Registrar estado (pantalla principal)
+// HU04 – Registrar estado (pantalla principal); desde aquí se accede a agenda, hábitos, sugerencias y música
 class MainActivity : SessionActivity() {
 
     private val moodViewModel: MoodViewModel by viewModels()
@@ -40,6 +40,18 @@ class MainActivity : SessionActivity() {
         findViewById<Button>(R.id.btnSaveMood).setOnClickListener {
             moodViewModel.saveMood(spMood.selectedItem.toString(), etNote.text.toString())
             etNote.text?.clear()
+        }
+        findViewById<Button>(R.id.btnAgenda).setOnClickListener {
+            startActivity(Intent(this, AgendaActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnHabits).setOnClickListener {
+            startActivity(Intent(this, HabitsActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnSuggestions).setOnClickListener {
+            startActivity(Intent(this, SuggestionsActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnMusic).setOnClickListener {
+            startActivity(Intent(this, MusicActivity::class.java))
         }
         findViewById<Button>(R.id.btnHistory).setOnClickListener {
             startActivity(Intent(this, HistoryActivity::class.java))

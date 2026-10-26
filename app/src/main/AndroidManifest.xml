@@ -20,6 +20,12 @@
         <activity android:name=".ui.ProfileActivity" />
         <activity android:name=".ui.HistoryActivity" />
         <activity android:name=".ui.MoodDetailActivity" />
+        <activity android:name=".ui.AgendaActivity" />
+        <activity android:name=".ui.TaskFormActivity" />
+        <activity android:name=".ui.HabitsActivity" />
+        <activity android:name=".ui.HabitFormActivity" />
+        <activity android:name=".ui.SuggestionsActivity" />
+        <activity android:name=".ui.MusicActivity" />
     </application>
 
 </manifest>

@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.moodspace.app.data.MoodDbHelper
 import com.moodspace.app.data.MoodEntry
+import com.moodspace.app.data.MoodKind
 import com.moodspace.app.data.MoodRepository
 import com.moodspace.app.data.SessionManager
 
@@ -24,6 +25,9 @@ class MoodViewModel(app: Application) : AndroidViewModel(app) {
     private val _saved = MutableLiveData<String>()
     val saved: LiveData<String> = _saved
 
+    private val _todayMood = MutableLiveData<MoodKind?>()
+    val todayMood: LiveData<MoodKind?> = _todayMood
+
     fun saveMood(mood: String, note: String) {
         repo.add(session.userId(), mood, note.trim())
         _saved.value = mood
@@ -35,5 +39,10 @@ class MoodViewModel(app: Application) : AndroidViewModel(app) {
 
     fun loadEntry(id: Long) {
         _entry.value = repo.get(id, session.userId())
+    }
+
+    /** Estado de hoy (HU13 lo usa para sugerir música); null si aún no registra ninguno. */
+    fun loadTodayMood() {
+        _todayMood.value = repo.today(session.userId())?.let { MoodKind.fromLabel(it.mood) }
     }
 }

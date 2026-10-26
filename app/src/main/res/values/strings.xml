@@ -19,6 +19,10 @@
     <string name="error_fields_required">Completa correo y contraseña</string>
     <string name="error_login_invalid">Correo o contraseña incorrectos</string>
     <string name="error_generic">No se pudo guardar. Intenta de nuevo</string>
+    <string name="error_task_title_required">Escribe el título de la tarea</string>
+    <string name="error_task_not_found">No se encontró la tarea</string>
+    <string name="error_habit_name_required">Escribe el nombre del hábito</string>
+    <string name="error_music_open">No se encontró una app para abrir la música</string>
 
     <!-- Login y registro -->
     <string name="login_subtitle">Inicia sesión para continuar</string>
@@ -39,6 +43,10 @@
     <string name="main_question">¿Cómo te sientes hoy?</string>
     <string name="hint_note">Nota (opcional)</string>
     <string name="btn_save_mood">Guardar estado</string>
+    <string name="btn_agenda">Mi agenda</string>
+    <string name="btn_habits">Mis hábitos</string>
+    <string name="btn_suggestions">Sugerencias para hoy</string>
+    <string name="btn_music">Música</string>
     <string name="btn_history">Ver historial</string>
     <string name="btn_edit_profile">Editar perfil</string>
     <string name="btn_logout">Cerrar sesión</string>
@@ -59,4 +67,90 @@
     <string name="detail_date_label">Fecha y hora</string>
     <string name="detail_note_label">Nota</string>
     <string name="detail_no_note">Sin nota</string>
+
+    <!-- Agenda y tareas (HU06 a HU09) -->
+    <string name="title_agenda">Mi agenda</string>
+    <string name="agenda_empty">Aún no tienes tareas. ¡Crea la primera!</string>
+    <string name="btn_new_task">Nueva tarea</string>
+    <string name="title_task_new">Nueva tarea</string>
+    <string name="title_task_edit">Editar tarea</string>
+    <string name="hint_task_title">Título</string>
+    <string name="hint_task_description">Descripción (opcional)</string>
+    <string name="hint_task_due">Fecha límite (opcional)</string>
+    <string name="label_priority">Prioridad</string>
+    <string name="btn_clear_date">Quitar fecha</string>
+    <string name="btn_save_task">Guardar tarea</string>
+    <string name="task_saved">Tarea creada</string>
+    <string name="task_updated">Tarea actualizada</string>
+    <string name="task_priority_label">Prioridad %1$s</string>
+    <string name="task_due">Vence %1$s</string>
+    <string name="task_overdue">Vencida: %1$s</string>
+
+    <!-- Hábitos (HU10 y HU11) -->
+    <string name="title_habits">Mis hábitos</string>
+    <string name="title_habit_new">Nuevo hábito</string>
+    <string name="habits_empty">Aún no tienes hábitos. ¡Crea el primero!</string>
+    <string name="btn_new_habit">Nuevo hábito</string>
+    <string name="hint_habit_name">Nombre del hábito (ej. Beber agua)</string>
+    <string name="hint_habit_description">Descripción (opcional)</string>
+    <string name="btn_save_habit">Guardar hábito</string>
+    <string name="habit_saved">Hábito creado</string>
+    <string name="habit_no_streak">Sin racha todavía</string>
+    <plurals name="habit_streak">
+        <item quantity="one">🔥 Racha: %d día</item>
+        <item quantity="other">🔥 Racha: %d días</item>
+    </plurals>
+
+    <!-- Sugerencias (HU12) -->
+    <string name="title_suggestions">Sugerencias para hoy</string>
+    <string name="suggestions_for_mood">Según tu estado de hoy: %1$s</string>
+    <string name="suggestions_no_mood">Aún no registras tu estado hoy</string>
+
+    <string name="sug_mood_none_title">Registra cómo te sientes</string>
+    <string name="sug_mood_none_detail">Con tu estado de hoy las sugerencias se ajustan a ti. Mientras tanto, estas son generales.</string>
+    <string name="sug_mood_happy_title">Aprovecha tu energía</string>
+    <string name="sug_mood_happy_detail">Es buen momento para lo más importante o lo que más te cuesta.</string>
+    <string name="sug_mood_good_title">Vas bien, mantén el ritmo</string>
+    <string name="sug_mood_good_detail">Avanza con tus pendientes y no olvides tus hábitos.</string>
+    <string name="sug_mood_neutral_title">Empieza con algo pequeño</string>
+    <string name="sug_mood_neutral_detail">Un primer paso sencillo ayuda a tomar impulso.</string>
+    <string name="sug_mood_sad_title">Hoy ve con calma</string>
+    <string name="sug_mood_sad_detail">Elige cosas ligeras y date espacio para descansar. Hablar con alguien de confianza también ayuda.</string>
+    <string name="sug_mood_angry_title">Haz una pausa antes de empezar</string>
+    <string name="sug_mood_angry_detail">Respira profundo unos minutos y deja lo más pesado para después.</string>
+
+    <string name="sug_task_overdue_title">Tareas vencidas: %1$s</string>
+    <string name="sug_task_overdue_detail">Revisa si puedes cerrarlas o reprogramarlas en tu agenda.</string>
+    <string name="sug_task_none_title">No tienes tareas pendientes</string>
+    <string name="sug_task_none_detail">Puedes agregar una nueva en tu agenda.</string>
+    <string name="sug_task_top_title">Empieza por: %1$s</string>
+    <string name="sug_task_top_detail">Es tu tarea pendiente más importante o más próxima.</string>
+    <string name="sug_task_light_title">Una tarea ligera: %1$s</string>
+    <string name="sug_task_light_detail">Es la menos exigente de tu lista, ideal para hoy.</string>
+
+    <string name="sug_habit_create_title">Crea tu primer hábito</string>
+    <string name="sug_habit_create_detail">Pequeñas rutinas diarias mejoran tu ánimo con el tiempo.</string>
+    <string name="sug_habit_pending_title">Hábito de hoy: %1$s</string>
+    <string name="sug_habit_pending_detail">Aún no lo registras hoy. Cumplirlo mantiene tu racha.</string>
+    <string name="sug_habit_done_title">¡Hábitos de hoy completos!</string>
+    <string name="sug_habit_done_detail">Buen trabajo, cumpliste todos tus hábitos.</string>
+
+    <string name="sug_music_title">Pon música para tu estado</string>
+    <string name="sug_music_detail">Mira playlists pensadas para cómo te sientes.</string>
+
+    <!-- Música (HU13) -->
+    <string name="title_music">Música</string>
+    <string name="music_for_mood">Música para cuando te sientes:</string>
+    <string name="music_hint">Al tocar una opción se abre la búsqueda en YouTube.</string>
+
+    <string-array name="priorities">
+        <item>Alta</item>
+        <item>Media</item>
+        <item>Baja</item>
+    </string-array>
+
+    <string-array name="task_orders">
+        <item>Ordenar por prioridad</item>
+        <item>Ordenar por fecha límite</item>
+    </string-array>
 </resources>

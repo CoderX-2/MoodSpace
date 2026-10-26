@@ -18,4 +18,12 @@ object Validators {
     @StringRes
     fun password(value: String): Int? =
         if (value.length < 6) R.string.error_password_short else null
+
+    @StringRes
+    fun taskTitle(value: String): Int? =
+        if (value.isBlank()) R.string.error_task_title_required else null
+
+    @StringRes
+    fun habitName(value: String): Int? =
+        if (value.isBlank()) R.string.error_habit_name_required else null
 }

@@ -50,11 +50,39 @@
             android:text="@string/btn_save_mood" />
 
         <Button
-            android:id="@+id/btnHistory"
+            android:id="@+id/btnAgenda"
             style="@style/Widget.Material3.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:text="@string/btn_agenda" />
+
+        <Button
+            android:id="@+id/btnHabits"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_habits" />
+
+        <Button
+            android:id="@+id/btnSuggestions"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_suggestions" />
+
+        <Button
+            android:id="@+id/btnMusic"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_music" />
+
+        <Button
+            android:id="@+id/btnHistory"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/btn_history" />
 
         <Button
