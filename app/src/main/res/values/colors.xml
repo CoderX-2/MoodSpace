@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores base de la marca -->
+    <color name="md_theme_primary">#6750A4</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#EADDFF</color>
+    <color name="md_theme_onPrimaryContainer">#21005D</color>
+
+    <!-- Prioridad de las tareas (HU09) -->
+    <color name="priority_high">#D32F2F</color>
+    <color name="priority_medium">#F57C00</color>
+    <color name="priority_low">#388E3C</color>
+    <color name="task_overdue">#D32F2F</color>
+</resources>
